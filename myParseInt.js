@@ -3,16 +3,13 @@
 function myParseInt(str) {
   let res = 0;
   for (let i = 0; i < str.length; i++) {
-    while (typeof +str[i] === "number") {
+    if (+str[i] <= 0 || +str[i] > 0) {
       res += +str[i];
       res *= 10;
+    } else {
+      break;
     }
   }
-  if (res === 0) {
-    return NaN;
-  }
-  return res / 10;
+  return res === 0 ? NaN : res / 10;
 }
-console.log(myParseInt("542shdus"));
-
-// Didn't see where is the problem.
+console.log(myParseInt("56ahjd58fgfg"));
