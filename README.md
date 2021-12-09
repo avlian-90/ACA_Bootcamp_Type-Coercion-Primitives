@@ -1,4 +1,4 @@
-> ## ***Type Coersion Primitives***
+> ## ***Type Coercion Primitives***
 
 **During this homework:**
 
